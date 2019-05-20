@@ -1,0 +1,91 @@
+// Single
+.single-product
+  .easyzoom
+    margin-bottom: 2rem
+    &-flyout
+      display: none
+
+    a
+      background: $lighter-gray
+      border-radius: .25rem
+      display: block
+      padding: 1rem
+
+    img
+      width: 100%
+
+  .thumbnails
+    display: flex
+    list-style: none
+    padding-left: 0
+
+    div
+      margin-bottom: 2rem
+
+    a
+      background: $lighter-gray
+      border-radius: .25rem
+      border: .15rem solid $lighter-gray
+      display: block
+      padding: 0.25rem
+
+      &.active
+        border: .15rem solid $yellowish-orange
+
+    img
+      width: 100%
+
+  .product
+    &-name
+      font-family: 'Open Sans'
+      font-size: 1.5rem
+      line-height: 1.2
+      margin-bottom: 0
+      text-transform: uppercase
+
+    &-category
+      color: $greyish
+      font-size: .75rem
+      margin-bottom: 0
+      text-transform: uppercase
+
+    &-data,
+      list-style: none
+      margin-top: 1rem
+      padding-left: 0
+
+      span
+        color: $scarlet
+        font-weight: bold
+
+    &-description
+      ul
+        line-height: 1.8
+        list-style: none
+        margin-left: 1.75rem
+        padding-left: 0
+        text-indent: -1.75rem
+
+      li:before
+        color: $yellowish-orange
+        content: '\f00c'
+        font-family: 'FontAwesome'
+        margin-right: 0.5rem
+
+  & ~ .products
+    margin-top: 4rem
+
+.single-brand
+  margin-bottom: 4rem
+
+  a
+    background: $lighter-gray
+    border-radius: .25rem
+    display: block
+    padding: 1rem
+
+  img
+    width: 100%
+
+  .row div
+    margin-bottom: 2rem

@@ -1,0 +1,120 @@
+// Footer
+  
+footer
+  background: $dark-gray
+  color: $white
+  padding: 4rem 0
+
+.locations
+  text-align: center
+  border-bottom: 2px solid $middle-gray
+
+  .container
+    padding-bottom: 4rem
+
+    @media (max-width: 768px)
+      padding-bottom: 2rem
+
+  &-icon
+    margin-bottom: 2rem
+  
+  &-title
+    color: $white
+    font-size: 1rem
+    text-transform: uppercase
+
+  &-address
+    font-size: 0.875rem
+    margin-bottom: 0
+  
+  &-block:nth-child(2)
+    @media (max-width: 768px)
+      padding: 2rem 0
+
+.infos
+  padding-top: 4rem
+
+  @media (max-width: 768px)
+    padding-top: 2rem
+
+  .container
+    display: flex
+    justify-content: space-between
+
+    @media (max-width: 768px)
+      flex-direction: column
+  
+  .footer-nav
+    display: flex
+    @media (max-width: 768px)
+      justify-content: center
+      margin-bottom: 2rem
+
+    @media (max-width: 416px)
+      flex-direction: column
+      align-items: center
+
+    .nav
+      display: initial
+      padding-left: 0
+      &:first-child
+        margin-right: 4rem
+
+        @media (max-width: 768px)
+          margin-right: 0
+          margin-bottom: 0.5rem
+      
+      @media (max-width: 768px)
+        display: flex
+
+      &:last-child .nav-item:last-child .nav-link
+        @media (max-width: 768px)
+          margin-right: 0
+   
+    .nav-item
+      margin-bottom: 1rem
+
+      @media (max-width: 768px)
+        margin-bottom: 0
+
+    .nav-link
+      color: $white
+      font-size: 0.875rem
+      padding: 0
+      transition: color ease .3s
+      &:hover
+        color: $yellowish-orange
+
+      @media (max-width: 768px)
+        margin-right: 1rem
+
+  .social-nav
+    .nav
+      @media (max-width: 768px)
+        justify-content: center
+    
+      @media (max-width: 416px)
+        flex-direction: column
+        align-items: center
+      
+      &:last-child .nav-item:last-child .nav-link
+        margin-right: 0
+
+    .nav-link
+      color: $white
+      font-size: 0.875rem
+      padding: 0
+      transition: color ease .3s
+      &:hover
+        color: $yellowish-orange
+      &:first-child
+        margin-right: 2rem
+        font-size: 0.875rem
+
+      img
+        margin-right: 0.5rem
+
+      @media (max-width: 416px)
+        &:first-child
+          margin-right: 0
+          margin-bottom: 1rem

@@ -1,0 +1,43 @@
+// Page
+
+.section-title
+  margin-bottom: 3rem
+
+  .home &
+    text-align: center
+
+.page-header
+  background: $lighter-gray
+  padding: 6rem 0 3rem
+
+  @media (max-width: 992px)
+    padding: 4rem 0 2rem
+
+  @media (max-width: 576px)
+    padding: 2rem 0 1rem
+
+  p,
+  h3
+    margin: 0
+
+  h3
+    text-transform: uppercase
+
+  .breadcrumb
+    background-color: transparent
+    border-radius: 0
+    list-style: none
+    margin: 0
+    padding: 0
+
+    &-item
+      color: $dark-gray
+      margin-left: 0.125rem
+
+      a
+        color: $dark-gray
+        transition: all .3s ease
+
+        &:hover
+          color: $scarlet
+          text-decoration: none

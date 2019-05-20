@@ -1,0 +1,34 @@
+{
+  "name": "bonfanti4x4-site",
+  "version": "1.0.0",
+  "description": "Bonfanti 4x4 WordPress Site",
+  "main": "index.js",
+  "repository": "gitlab.com/bonfanti/bonfanti4x4-site",
+  "author": "Bonfanti Labs",
+  "license": "MIT",
+  "private": true,
+  "devDependencies": {
+    "@babel/core": "^7.4.4",
+    "@babel/preset-env": "^7.4.4",
+    "autoprefixer": "^9.5.1",
+    "browser-sync": "^2.26.5",
+    "cssnano": "^4.1.10",
+    "gulp": "^4.0.2",
+    "gulp-babel": "^8.0.0",
+    "gulp-clean": "^0.4.0",
+    "gulp-imagemin": "^5.0.3",
+    "gulp-newer": "^1.4.0",
+    "gulp-postcss": "^8.0.0",
+    "gulp-rename": "^1.4.0",
+    "gulp-sass": "^4.0.2",
+    "gulp-strip-debug": "^3.0.0",
+    "gulp-uglify": "^3.0.2",
+    "node-sass": "^4.12.0",
+    "postcss-assets": "^5.0.0"
+  },
+  "scripts": {
+    "start": "gulp",
+    "build": "gulp build"
+  },
+  "themeName": "bonfanti4x4-site"
+}

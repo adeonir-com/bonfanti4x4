@@ -1,0 +1,7 @@
+deploy:
+  stage: deploy
+  only:
+    - master
+  script:
+    - apt-get update -qq && apt-get install -qq lftp -y
+    - lftp -c "set ftp:ssl-allow false; open -u $USERNAME,$PASSWORD $HOST; mirror -Rv ./ ./public_html --ignore-time -p"

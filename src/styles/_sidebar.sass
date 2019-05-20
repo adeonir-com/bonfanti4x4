@@ -1,0 +1,67 @@
+// Sidebar
+
+.sidebar
+  @media (max-width: 992px)
+    margin-bottom: 1rem
+    
+.categories
+  &:first-child
+    margin-bottom: 4rem
+
+  @media (max-width: 992px)
+    &:first-child
+      margin-bottom: 1rem
+
+  .data-toggle
+    color: $dark-gray
+    @media (min-width: 992px)
+      pointer-events: none
+
+    &:hover
+      color: $dark-gray
+      text-decoration: none
+      @media (min-width: 992px)
+        cursor: default
+        pointer-events: none
+
+  .panel-collapse
+    @media (min-width: 992px)
+      display: block
+
+  &-title
+    font-family: 'Open Sans', sans-serif
+    font-size: 22px
+    text-transform: uppercase
+
+    &:after
+      content: ''
+      width: 65px
+      height: 2px
+      display: block
+      background: $scarlet
+      position: relative
+      top: 1rem
+      margin-bottom: 2rem
+
+      @media (max-width: 992px)
+        top: 0.5rem
+        margin-bottom: 1rem
+
+  &-nav
+    padding: 0
+
+  &-item
+    list-style: none
+    padding: .5rem 0
+
+    &:not(:last-child)
+      border-bottom: 1px solid $greyish
+
+    a
+      color: $dark-gray
+      display: block
+      transition: color .2s ease
+
+      &:hover
+        text-decoration: none
+        color: $scarlet

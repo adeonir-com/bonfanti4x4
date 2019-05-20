@@ -1,0 +1,37 @@
+// Products
+.products
+  a:hover
+    color: $dark-gray
+    text-decoration: none
+
+  .product-card
+    margin-bottom: 2rem
+    transition: all .2s ease-in-out
+
+    &:hover
+      box-shadow: 0 4px 20px rgba($black, .2)
+
+  .card
+    border: 1px solid $light-gray
+
+    &-image
+      background: $lighter-gray
+      border-top-left-radius: calc(.25rem - 1px)
+      border-top-right-radius: calc(.25rem - 1px)
+      padding: 1rem
+
+    &-code
+      color: $scarlet
+      font-family: 'Open Sans'
+      font-size: 1rem
+
+    &-text
+      color: $dark-gray
+      text-transform: uppercase
+      min-height: 6rem
+
+    &-category
+      color: $greyish
+      font-size: .75rem
+      margin-bottom: 0
+      text-transform: uppercase
