@@ -36,9 +36,7 @@ const styles = {
       basePath: dir.build,
       baseUrl: 'wp-content/themes/simple/'
     }),
-    require('autoprefixer')({
-      browsers: ['last 2 versions', '> 2%']
-    }),
+    require('autoprefixer'),
     require('cssnano')
   ]
 }
