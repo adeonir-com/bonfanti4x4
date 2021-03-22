@@ -1,13 +1,13 @@
 const { src, dest, task, parallel, series, watch } = require('gulp');
 const newer = require('gulp-newer');
-const postcss = require('gulp-postcss');
 const sass = require('gulp-sass');
 const imagemin = require('gulp-imagemin');
+const autoprefixer = require('gulp-autoprefixer');
+const minifycss = require('gulp-uglifycss');
 const babel = require('gulp-babel');
 const uglify = require('gulp-uglify');
 const browsersync = require('browser-sync');
 const stripdebug = require('gulp-strip-debug');
-const cleaner = require('gulp-clean');
 
 sass.compiler = require('sass');
 
@@ -31,26 +31,12 @@ const styles = {
     precision: 3,
     errLogToConsole: true,
   },
-  processors: [
-    require('postcss-assets')({
-      loadPaths: ['images/'],
-      basePath: dir.build,
-      baseUrl: 'wp-content/themes/simple/',
-    }),
-    require('autoprefixer'),
-    require('cssnano'),
-  ],
 };
 
 const scripts = {
   src: `${dir.src}/scripts/**/*`,
   build: `${dir.build}/js/`,
 };
-
-const clean = {
-  build: dir.build,
-};
-
 task('images', () =>
   src(images.src)
     .pipe(newer(images.src))
@@ -63,7 +49,8 @@ task('styles', () =>
   src(styles.src)
     .pipe(newer(styles.build))
     .pipe(sass(styles.options))
-    .pipe(postcss(styles.processors))
+    .pipe(autoprefixer())
+    .pipe(minifycss())
     .pipe(dest(styles.build))
     .pipe(browsersync.stream())
 );
@@ -80,8 +67,6 @@ task('scripts', () =>
     .pipe(dest(scripts.build))
     .pipe(browsersync.stream())
 );
-
-task('clean', () => src(clean.build, { read: false }).pipe(cleaner()));
 
 task('browser-sync', (done) => {
   browsersync.init({
@@ -103,4 +88,4 @@ task('dev', parallel('images', 'styles', 'scripts'));
 
 task('default', series('dev', parallel('browser-sync', 'watchy')));
 
-task('build', series('clean', 'dev'));
+task('build', series('images', 'styles', 'scripts'));
