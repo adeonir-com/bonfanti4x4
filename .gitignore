@@ -39,6 +39,8 @@ wp-content/themes/*
 !src
 !gulpfile.js
 !package.json
+!.github/
+!.github/*
 
 # Ignore node dependency directories.
 node_modules

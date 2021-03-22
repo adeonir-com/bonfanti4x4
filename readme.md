@@ -2,6 +2,10 @@
 
 Tema desenvolvido em WordPress para o site da Bonfanti 4x4.
 
+<div align="center">
+  <img src=".github/screenshot.png" atl="Bonfanti 4x4" />
+</div>
+
 ## Stack
 
 - CMS: [Wordpress](https://wordpress.com/)
