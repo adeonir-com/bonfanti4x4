@@ -19,14 +19,24 @@ Necessário [Docker](https://docker.com/), [NodeJS](https://nodejs.org/), [GulpJ
 $ cd bonfanti4x4
 $ docker-compose up -d
 
-# instalar dependências e inicializar servidor de desenvolvimento
+# instalar dependências
 $ yarn
-$ yarn dev
+```
 
+## Editando os arquivos
+
+Os arquivos do tema estão na pasta `wp-content/themes/simple`. Edite somente os arquivos **PHP**.
+
+Os arquivos **SCSS** e **JS**, além das **imagens**, estão dentro da pasta `src`. Os arquivos `img`, `css` e `js` da pasta do tema serão substituídios ao gerar o build.
+
+```sh
+# inicializar servidor de desenvolvimento
+$ yarn dev
+```
+
+## Gerando build
+
+```sh
 # gerar o build de produção
 $ yarn build
 ```
-
-## Plugins
-
-Os plugins utilizados:
