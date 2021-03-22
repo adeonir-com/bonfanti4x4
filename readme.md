@@ -20,10 +20,13 @@ $ cd bonfanti4x4
 $ docker-compose up -d
 
 # instalar dependências e inicializar servidor de desenvolvimento
-$ cd wp-content/themes/simple
-$ yarn start
+$ yarn
+$ yarn dev
+
+# gerar o build de produção
+$ yarn build
 ```
 
 ## Plugins
 
-Os plugins utilizados estão na pasta `wp-content/plugins` em arquivos `.zip`.
+Os plugins utilizados:

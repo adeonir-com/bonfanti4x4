@@ -1,0 +1,12 @@
+vendor/
+node_modules/
+assets/images
+assets/scripts
+*.css
+*.map
+*.php
+*.png
+*.json
+*.txt
+LICENSE
+README.md

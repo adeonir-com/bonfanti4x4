@@ -10,6 +10,8 @@ const browsersync = require('browser-sync')
 const stripdebug = require('gulp-strip-debug')
 const cleaner = require('gulp-clean')
 
+sass.compiler = require('sass');
+
 const dir = {
   src: 'src',
   build: 'wp-content/themes/simple'

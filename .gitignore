@@ -28,6 +28,12 @@ wp-content/themes/*
 !.gitignore
 !.gitlab-ci.yml
 !.editorconfig
+!.eslintignore
+!.eslintrc
+!.prettierignore
+!.prettierrc
+!.stylelintignore
+!.stylelintrc
 !docker-compose.yml
 !readme.md
 !src
