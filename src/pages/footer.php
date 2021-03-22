@@ -30,8 +30,8 @@
                     <img class="locations-icon" src="<?php bloginfo( 'template_url' ) ?>/img/icon-map.svg" alt="">
                     <h5 class="locations-title">Bonfanti MG</h5>
                     <address class="locations-address">(31) 3046-5558<br>
-                    Rua Santa Maria, 95 - Santa Maria<br>
-                    32240-190 Contagem/MG</address>
+                    Rua Osório de Morais, 800 - Cidade Industrial<br>
+                    32240-140 Contagem/MG</address>
                 </div>
             </div>
         </div>
