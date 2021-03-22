@@ -1,0 +1,42 @@
+// Catalog
+
+.catalog {
+  padding: 4rem 0;
+
+  .jumbotron {
+    margin-bottom: 0;
+    background-color: rgba($yellowish-orange, .2);
+    border-radius: .1875rem;
+  }
+
+  &-image {
+    position: absolute;
+    top: -70%;
+    width: 95%;
+    padding-right: 1rem;
+
+    @media (max-width: 992px) {
+      top: 0;
+    }
+
+    @media (max-width: 768px) {
+      position: static;
+      width: 100%;
+      padding-right: 0;
+      margin-bottom: 2rem;
+    }
+  }
+
+  &-title {
+    margin-bottom: 1rem;
+    text-align: left;
+
+    @media (max-width: 992px) {
+      line-height: 1;
+    }
+
+    @media (max-width: 768px) {
+      line-height: 1.4;
+    }
+  }
+}

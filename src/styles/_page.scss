@@ -1,0 +1,54 @@
+// Page
+
+.section-title {
+  margin-bottom: 3rem;
+
+  .home & {
+    text-align: center;
+  }
+}
+
+.page-header {
+  padding: 6rem 0 3rem;
+  background: $lighter-gray;
+
+  @media (max-width: 992px) {
+    padding: 4rem 0 2rem;
+  }
+
+  @media (max-width: 576px) {
+    padding: 2rem 0 1rem;
+  }
+
+  p,
+  h3 {
+    margin: 0;
+  }
+
+  h3 {
+    text-transform: uppercase;
+  }
+
+  .breadcrumb {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    background-color: transparent;
+    border-radius: 0;
+
+    &-item {
+      margin-left: .125rem;
+      color: $dark-gray;
+
+      a {
+        color: $dark-gray;
+        transition: all .3s ease;
+
+        &:hover {
+          color: $scarlet;
+          text-decoration: none;
+        }
+      }
+    }
+  }
+}

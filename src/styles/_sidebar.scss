@@ -1,0 +1,89 @@
+// Sidebar
+
+.sidebar {
+  @media (max-width: 992px) {
+    margin-bottom: 1rem;
+  }
+}
+
+.categories {
+  &:first-child {
+    margin-bottom: 4rem;
+  }
+
+  @media (max-width: 992px) {
+    &:first-child {
+      margin-bottom: 1rem;
+    }
+  }
+
+  .data-toggle {
+    color: $dark-gray;
+
+    @media (min-width: 992px) {
+      pointer-events: none;
+    }
+
+    &:hover {
+      color: $dark-gray;
+      text-decoration: none;
+
+      @media (min-width: 992px) {
+        pointer-events: none;
+        cursor: default;
+      }
+    }
+  }
+
+  .panel-collapse {
+    @media (min-width: 992px) {
+      display: block;
+    }
+  }
+
+  &-title {
+    font-family: "Open Sans", sans-serif;
+    font-size: 22px;
+    text-transform: uppercase;
+
+    &::after {
+      position: relative;
+      top: 1rem;
+      display: block;
+      width: 65px;
+      height: 2px;
+      margin-bottom: 2rem;
+      content: "";
+      background: $scarlet;
+
+      @media (max-width: 992px) {
+        top: .5rem;
+        margin-bottom: 1rem;
+      }
+    }
+  }
+
+  &-nav {
+    padding: 0;
+  }
+
+  &-item {
+    padding: .5rem 0;
+    list-style: none;
+
+    &:not(:last-child) {
+      border-bottom: 1px solid $greyish;
+    }
+
+    a {
+      display: block;
+      color: $dark-gray;
+      transition: color .2s ease;
+
+      &:hover {
+        color: $scarlet;
+        text-decoration: none;
+      }
+    }
+  }
+}

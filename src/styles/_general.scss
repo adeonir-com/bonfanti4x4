@@ -1,0 +1,133 @@
+// General
+
+/* stylelint-disable font-family-name-quotes */
+/* stylelint-disable selector-no-qualifying-type */
+/* stylelint-disable selector-class-pattern */
+html {
+  position: relative;
+  min-height: 100vh;
+  background: $white;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-width: 360px;
+  min-height: 100vh;
+  font-family: "Open Sans", sans-serif;
+  color: $black;
+}
+
+.wrapper {
+  flex: 1;
+}
+
+.content {
+  padding: 6rem 0 3rem;
+
+  @media (max-width: 992px) {
+    padding: 4rem 0 0;
+  }
+
+  @media (max-width: 768px) {
+    padding: 3rem 0 0;
+  }
+
+  @media (max-width: 576px) {
+    padding: 2rem 0 0;
+  }
+}
+
+.navbar-expand-lg .navbar-nav {
+  flex-direction: row;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  line-height: 1.4;
+  color: $dark-gray;
+}
+
+h3 {
+  font-size: 2.25em;
+}
+
+.form-control {
+  min-height: 50px;
+  padding: 0 1rem;
+  margin-bottom: 1rem;
+
+  &:hover,
+  &:focus {
+    color: $dark-gray;
+    border-color: $yellowish-orange;
+    box-shadow: 0 0 0 .2rem transparentize($yellowish-orange, .75);
+  }
+}
+
+textarea.form-control {
+  padding: 1rem;
+}
+
+.btn-filled {
+  min-height: 50px;
+  padding: 0 2rem;
+  line-height: 50px;
+  color: $white;
+  text-transform: uppercase;
+  background: $yellowish-orange;
+
+  &:hover {
+    background: saturate(darken($yellowish-orange, 10%), 5%);
+  }
+
+  &:focus {
+    box-shadow: 0 0 0 .2rem transparentize($yellowish-orange, .75);
+  }
+}
+
+.btn-outline-dark {
+  min-height: 50px;
+  padding: 0 2rem;
+  line-height: 50px;
+  text-transform: uppercase;
+
+  &:focus {
+    box-shadow: 0 0 0 .2rem rgba(52, 58, 64, .25);
+  }
+}
+
+.fancybox-thumbs__list a {
+  background-color: $white;
+}
+
+.fancybox-thumbs__list a::before {
+  border: 3px solid $yellowish-orange;
+}
+
+.fancybox-image {
+  padding: 1rem;
+  background: $lighter-gray;
+  border-radius: .25rem;
+}
+
+.pagination {
+  .page-link {
+    color: $dark-gray;
+
+    &:focus {
+      box-shadow: 0 0 0 .2rem rgba(52, 58, 64, .25);
+    }
+  }
+
+  .page-item.active .page-link {
+    background-color: $middle-gray;
+    border-color: $middle-gray;
+  }
+}

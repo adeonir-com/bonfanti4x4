@@ -1,0 +1,187 @@
+// Header
+
+header {
+  background: $dark-gray;
+  border-top: .5rem solid $yellowish-orange;
+}
+
+.top-header {
+  padding: 1rem 0;
+  color: $white;
+  border-bottom: 2px solid $middle-gray;
+
+  @media (max-width: 576px) {
+    display: none;
+  }
+
+  .nav-link {
+    display: flex;
+    align-items: center;
+    padding: 0;
+    color: $white;
+    transition: all .3s ease;
+
+    &:hover {
+      color: $yellowish-orange;
+    }
+
+    @media (min-width: 768px) {
+      &.mobile-link {
+        pointer-events: none;
+        cursor: default;
+
+        &:hover {
+          color: $white;
+        }
+      }
+    }
+  }
+
+  .contact {
+    display: flex;
+    justify-content: space-between;
+
+    @media (max-width: 768px) {
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .distro {
+      @media (max-width: 992px) {
+        font-size: 90%;
+      }
+
+      @media (max-width: 768px) {
+        margin-bottom: .5rem;
+        font-size: 80%;
+      }
+    }
+
+    .nav {
+      @media (max-width: 992px) {
+        font-size: 90%;
+      }
+
+      @media (max-width: 768px) {
+        font-size: 80%;
+
+        &-item:not(:last-child) {
+          margin-right: 1rem;
+        }
+      }
+
+      &-item:not(:last-child) {
+        margin-right: 2rem;
+      }
+    }
+
+    i {
+      margin-right: .25rem;
+      color: $yellowish-orange;
+    }
+  }
+}
+
+.main-header {
+  padding: 2rem 0;
+
+  h1 {
+    display: none;
+  }
+
+  .navbar {
+    padding: 0;
+
+    @media (max-width: 992px) {
+      justify-content: center;
+    }
+
+    &-brand {
+      padding: 0;
+      margin-right: 2rem;
+
+      @media (max-width: 992px) {
+        margin: 0 2rem 1rem;
+      }
+
+      @media (max-width: 768px) {
+        margin: 0 2rem 1rem;
+      }
+    }
+
+    &-search {
+      padding: 1rem 0 1rem 1rem;
+      line-height: 1;
+      color: $yellowish-orange;
+      cursor: pointer;
+      background: none;
+      border: none;
+      outline: none;
+    }
+
+    &-nav,
+    &-search {
+      @media (max-width: 768px) {
+        font-size: 90%;
+      }
+    }
+
+    .nav-link {
+      padding: 0;
+      color: $white;
+      text-transform: uppercase;
+      transition: all .3s ease;
+
+      &:hover {
+        color: $yellowish-orange;
+      }
+
+      &:not(:last-child) {
+        margin-right: 2rem;
+
+        @media (max-width: 576px) {
+          margin-right: 1rem;
+        }
+      }
+    }
+  }
+}
+
+.modal {
+  &-dialog {
+    margin-top: 12rem;
+
+    @media (min-width: 576px) {
+      margin-top: 16rem;
+    }
+
+    @media (min-width: 992px) {
+      margin-top: 12.5rem;
+    }
+  }
+
+  &-body {
+    padding: 0;
+  }
+
+  .form-control {
+    margin: 0;
+  }
+
+  .input-group-append {
+    button {
+      padding: 0 2rem;
+      color: $white;
+      text-transform: uppercase;
+      background: $yellowish-orange;
+
+      &:hover {
+        background: saturate(darken($yellowish-orange, 10%), 5%);
+      }
+
+      &:focus {
+        box-shadow: 0 0 0 .2rem transparentize($yellowish-orange, .75);
+      }
+    }
+  }
+}

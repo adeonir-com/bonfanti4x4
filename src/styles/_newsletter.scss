@@ -1,0 +1,51 @@
+// Newsletter
+
+.newsletter {
+  background: $lighter-gray;
+
+  .container {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+    text-align: center;
+  }
+
+  img {
+    margin-bottom: 1rem;
+  }
+
+  p {
+    margin-bottom: 1.5rem;
+  }
+
+  .form-control {
+    height: 50px;
+    padding: 0 1rem;
+    border-color: $yellowish-orange;
+  }
+
+  .input-group-append {
+    button {
+      padding: 0 2rem;
+      color: $white;
+      text-transform: uppercase;
+      background: $yellowish-orange;
+
+      &:hover {
+        background: saturate(darken($yellowish-orange, 10%), 5%);
+      }
+
+      &:focus {
+        box-shadow: 0 0 0 .2rem transparentize($yellowish-orange, .75);
+      }
+    }
+  }
+}
+
+.subscription {
+  .headline {
+    margin-top: 20px;
+    margin-bottom: 0;
+    font-size: 18px;
+    font-weight: 700;
+  }
+}

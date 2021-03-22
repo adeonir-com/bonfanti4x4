@@ -1,0 +1,48 @@
+// Contact
+
+.contact {
+  &-block {
+    margin-bottom: 2rem;
+  }
+
+  span {
+    color: $scarlet;
+  }
+
+  .card {
+    display: block;
+    padding: 2rem 1rem;
+    margin-bottom: 2rem;
+    text-align: center;
+
+    &-icon {
+      width: auto;
+      height: 3rem;
+      margin-bottom: 2rem;
+    }
+
+    &-title {
+      margin-bottom: 1rem;
+      font-size: 22px;
+      font-weight: 700;
+    }
+
+    &-text {
+      margin-bottom: 0;
+      font-size: 18px;
+
+      a {
+        color: $black;
+      }
+    }
+  }
+
+  &-subtitle {
+    display: inline-block;
+    margin-bottom: 1rem;
+  }
+
+  .btn-outline-dark {
+    float: right;
+  }
+}
