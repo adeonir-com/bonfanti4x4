@@ -22,8 +22,8 @@
                     <img class="locations-icon" src="<?php bloginfo( 'template_url' ) ?>/img/icon-map.svg" alt="">
                     <h5 class="locations-title">Bonfanti SP</h5>
                     <address class="locations-address">(11) 2412-6411<br>
-                    Rua Umbuzeiro, 110<br>
-                    Cumbica - 07224-010 Guarulhos/RS</address>
+                    Rua Umbuzeiro, 110 - Cumbica<br>
+                    07224-010 Guarulhos/RS</address>
                 </div>
 
                 <div class="col-md locations-block">

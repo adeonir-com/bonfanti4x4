@@ -45,6 +45,9 @@
                         <div class="product-description">
                             <?php the_field( 'product_description' ); ?>
                         </div>
+                        <?php if ( get_field( 'product_link_mercado_livre' ) ) : ?>
+                            <a class="btn btn-filled" href="<?php the_field( 'product_link_mercado_livre' )->name; ?>" target="blank">Compre pelo Mercado Livre</a>
+                        <?php endif; ?>
                     </div>
                 </div>
             </div>
