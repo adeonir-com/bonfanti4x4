@@ -46,10 +46,9 @@
                             <?php the_field( 'product_description' ); ?>
                         </div>
                         <?php if ( get_field( 'product_link_mercado_livre' ) ) : ?>
-                            <?php $mercado_livre = get_field( 'product_link_mercado_livre' ); ?>
-                            <a class="btn btn-filled" href="<?php $mercado_livre->name; ?>" rel="noopener" target="blank">Compre pelo Mercado Livre</a>
+                            <a class="btn btn-filled" href="<?php the_field( 'product_link_mercado_livre' )->name; ?>" rel="noopener" target="blank">Compre pelo Mercado Livre</a>
                         <?php else : ?>
-                            <a class="btn btn-filled btn-whatsapp" rel="noopener" target="_blank" href="https://web.whatsapp.com/send?phone=51991731645">
+                            <a class="btn btn-filled btn-whatsapp" rel="noopener" target="_blank" href="https://web.whatsapp.com/send?phone=5551997664789">
                                 <i class="fab fa-whatsapp"></i>
                                 Peça pelo nosso WhatsApp
                             </a>
