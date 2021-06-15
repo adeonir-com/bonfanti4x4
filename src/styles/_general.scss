@@ -75,6 +75,11 @@ textarea.form-control {
   padding: 1rem;
 }
 
+.btn {
+  display: inline-flex;
+  align-items: center;
+}
+
 .btn-filled {
   min-height: 50px;
   padding: 0 2rem;
@@ -92,6 +97,12 @@ textarea.form-control {
   }
 }
 
+a.btn-filled {
+  &:hover {
+    color: $white;
+  }
+}
+
 .btn-outline-dark {
   min-height: 50px;
   padding: 0 2rem;
@@ -100,6 +111,19 @@ textarea.form-control {
 
   &:focus {
     box-shadow: 0 0 0 .2rem rgba(52, 58, 64, .25);
+  }
+}
+
+.btn-whatsapp {
+  background: $whatsapp;
+
+  &:hover {
+    background: saturate(darken($whatsapp, 10%), 5%);
+  }
+
+  i {
+    margin-right: .8rem;
+    font-size: 1.6rem;
   }
 }
 
