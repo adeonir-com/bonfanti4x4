@@ -1,6 +1,6 @@
 const { src, dest, task, parallel, series, watch } = require('gulp');
 const newer = require('gulp-newer');
-const sass = require('gulp-sass');
+const sass = require('gulp-dart-sass');
 const imagemin = require('gulp-imagemin');
 const autoprefixer = require('gulp-autoprefixer');
 const minifycss = require('gulp-uglifycss');
@@ -70,7 +70,7 @@ task('scripts', () =>
 
 task('browser-sync', (done) => {
   browsersync.init({
-    proxy: 'localhost:8001',
+    proxy: 'bonfanti4x4.test',
     ghostMode: false,
     open: false,
   });
