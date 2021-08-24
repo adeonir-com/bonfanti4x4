@@ -67,8 +67,6 @@
     <!-- end infos -->
 </footer>
 
-<?php get_template_part( 'inc/google-tag' ); ?>
-<?php get_template_part( 'inc/facebook-pixel-code' ); ?>
 <?php wp_footer(); ?>
 </body>
 

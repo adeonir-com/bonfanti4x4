@@ -10,6 +10,8 @@
     <link rel="shortcut icon" href="<?php bloginfo( 'template_url' ) ?>/img/favicon.png" type="image/x-icon">
 
     <?php wp_head(); ?>
+    <?php get_template_part( 'inc/google-tag' ); ?>
+    <?php get_template_part( 'inc/facebook-pixel-code' ); ?>
 </head>
 
 <body>
