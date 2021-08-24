@@ -44,3 +44,6 @@ wp-content/themes/*
 
 # Ignore node dependency directories.
 node_modules
+
+# Ignore facebook pixel code verification file
+60dv82aqksvnkh6q7qsbygc0k7602c.html
